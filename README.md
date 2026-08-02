@@ -66,7 +66,7 @@ This pipeline ingests e-commerce transaction data, performs data cleaning and tr
 
 # 📂 Project Structure
 
-```text
+```
 ecommerce-cloud-etl-pipeline/
 ├── .github/
 │   └── workflows/
@@ -85,39 +85,47 @@ ecommerce-cloud-etl-pipeline/
 # 🚀 Local Setup & Installation
 
 1. Clone Repository
-```bash
+```
 git clone https://github.com/dikahendrayana/ecommerce-cloud-etl-pipeline.git
-cd ecommerce-cloud-etl-pipeline```
+cd ecommerce-cloud-etl-pipeline
+```
 
 2. Setup Environment Variables
 Create a .env file in the root directory and populate it with your credentials:
-```SUPABASE_URL=https://your-project.supabase.co
+```
+SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_KEY=your-supabase-anon-or-service-role-key
 FONNTE_TOKEN=your-fonnte-api-token
-TARGET_PHONE_NUMBER=0812XXXXXXXX```
+TARGET_PHONE_NUMBER=0812XXXXXXXX
+```
 
 3. Install Dependencies & Run
-# Create and activate virtual environment
-```python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate```
+Create and activate virtual environment
+```
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-# Install required packages
-```pip install -r requirements.txt```
+Install required packages
+```
+pip install -r requirements.txt
+```
 
-# Run pipeline locally
-```python main.py
+Run pipeline locally
+```
+python main.py
 ```
 
 # 📈 Roadmap & Upcoming Enhancements
-[**x**] Initial cloud pipeline setup with GitHub Actions & Supabase.
+- [x] Initial cloud pipeline setup with GitHub Actions & Supabase.
 
-[**x**] Automated WhatsApp notification integration upon workflow completion.
+- [x] Automated WhatsApp notification integration upon workflow completion.
 
-[ ] Dynamic Data Generator Integration: Transition from static REST endpoints to a dynamic synthetic event streaming generator using Faker to simulate daily transactions.
+- [ ] Dynamic Data Generator Integration: Transition from static REST endpoints to a dynamic synthetic event streaming generator using Faker to simulate daily transactions.
 
-[ ] Data Quality Framework: Implement schema validation prior to the database loading phase.
+- [ ] Data Quality Framework: Implement schema validation prior to the database loading phase.
 
-[ ] BI Dashboard Integration: Connect Supabase PostgreSQL instance to Metabase / Looker Studio for real-time sales reporting.
+- [ ] BI Dashboard Integration: Connect Supabase PostgreSQL instance to Metabase / Looker Studio for real-time sales reporting.
 
 # 👤 Author
 
