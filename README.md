@@ -131,9 +131,10 @@ python main.py
 
 ## 👤 Author
 
-**Dika Hendrayana**
-* **GitHub:** [@dikahendrayana](https://github.com/dikahendrayana)
-* **LinkedIn:** [Dika Hendrayana](https://linkedin.com/in/dika-hendrayana)
+<b>Dika Hendrayana</b>
+
+* <b>GitHub:</b> [@dikahendrayana](https://github.com/dikahendrayana)
+* <b>LinkedIn:</b> [Dika Hendrayana](https://linkedin.com/in/dika-hendrayana)
 
 ---
 *Developed as part of a continuous learning path in Data Engineering & Cloud Data Architecture.*
