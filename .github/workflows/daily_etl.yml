@@ -28,7 +28,7 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          FONNTE_API_KEY: ${{ secrets.FONNTE_API_KEY }}
+          FONNTE_TOKEN: ${{ secrets.FONNTE_API_KEY }}
           TARGET_PHONE_NUMBER: ${{ secrets.TARGET_PHONE_NUMBER }}
         run: |
           python main.py
