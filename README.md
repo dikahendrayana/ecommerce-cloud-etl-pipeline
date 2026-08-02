@@ -83,29 +83,29 @@ ecommerce-cloud-etl-pipeline/
 
 ```
 # 🚀 Local Setup & Installation
-```
+
 1. Clone Repository
-bash
+```bash
 git clone https://github.com/dikahendrayana/ecommerce-cloud-etl-pipeline.git
-cd ecommerce-cloud-etl-pipeline
+cd ecommerce-cloud-etl-pipeline```
 
 2. Setup Environment Variables
 Create a .env file in the root directory and populate it with your credentials:
-SUPABASE_URL=https://your-project.supabase.co
+```SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_KEY=your-supabase-anon-or-service-role-key
 FONNTE_TOKEN=your-fonnte-api-token
-TARGET_PHONE_NUMBER=0812XXXXXXXX
+TARGET_PHONE_NUMBER=0812XXXXXXXX```
 
 3. Install Dependencies & Run
 # Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+```python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate```
 
 # Install required packages
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 # Run pipeline locally
-python main.py
+```python main.py
 ```
 
 # 📈 Roadmap & Upcoming Enhancements
