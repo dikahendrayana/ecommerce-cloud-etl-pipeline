@@ -44,21 +44,28 @@ This pipeline ingests e-commerce transaction data, performs data cleaning and tr
 │  - Automated Execution Summary │
 └────────────────────────────────┘
 
-✨ **Key Features & Engineering Highlights**
+# ✨ **Key Features & Engineering Highlights**
 - **Automated Cloud Orchestration**: Scheduled via GitHub Actions (cron) to run daily with zero manual intervention required.
 - **Idempotent Upsert Strategy**: Configured primary key constraints on Supabase (PostgreSQL) to handle updates and insertions gracefully, preventing duplicate rows across execution cycles.
 - **Modular Pipeline Architecture**: Clean separation of concerns with dedicated modules for extraction (Extract), transformation (Transform), loading (Load), and alerting (Notification).
 - **Real-time Alerting System**: Integrated with Fonnte API to send automated WhatsApp notifications detailing execution statistics (records processed, errors, timestamps).
 - **Production Credentials Management**: Strictly isolated using GitHub Repository Secrets and .env environment variables to protect sensitive API keys and database parameters.
 
-🛠️ **Tech Stack & Tools**
-Language: Python 3.11	🐍
-Data Processing:	Pandas 🐼 
-Data Warehouse:	Supabase (PostgreSQL) 🐘
-Orchestration / CI/CD:	GitHub Actions :rocket:
-Alerting System:	Fonnte API 💬
+# 🛠️ Tech Stack & Tools
 
-📂 **Project Structure**
+| Component | Technology | Usage |
+| :--- | :--- | :--- |
+| **Language** | Python 3.11 | Core business logic & orchestration |
+| **Data Processing** | Pandas | Data cleaning & structural transformation |
+| **Data Warehouse** | Supabase (PostgreSQL) | Cloud database for structured e-commerce datasets |
+| **Orchestration** | GitHub Actions | Scheduled cloud execution runner |
+| **Alerting System** | Fonnte API | WhatsApp dispatch for operational monitoring |
+
+---
+
+# 📂 Project Structure
+
+```text
 ecommerce-cloud-etl-pipeline/
 ├── .github/
 │   └── workflows/
@@ -74,7 +81,7 @@ ecommerce-cloud-etl-pipeline/
 └── README.md                   # Project documentation
 
 
-🚀 **Local Setup & Installation**
+# 🚀 **Local Setup & Installation**
 git clone [https://github.com/dikahendrayana/ecommerce-cloud-etl-pipeline.git](https://github.com/dikahendrayana/ecommerce-cloud-etl-pipeline.git)
 cd ecommerce-cloud-etl-pipeline
 
@@ -96,14 +103,14 @@ pip install -r requirements.txt
 # Run pipeline locally
 python main.py
 
-📈 Roadmap & Upcoming Enhancements
+# 📈 Roadmap & Upcoming Enhancements
 [x] Initial cloud pipeline setup with GitHub Actions & Supabase.
 [x] Automated WhatsApp notification integration upon workflow completion.
 [ ] Dynamic Data Generator Integration: Transition from static REST endpoints to a dynamic synthetic event streaming generator using Faker to simulate daily transactions.
 [ ] Data Quality Framework: Implement schema validation prior to the database loading phase.
 [ ] BI Dashboard Integration: Connect Supabase PostgreSQL instance to Metabase / Looker Studio for real-time sales reporting.
 
-👤 Author
+# 👤 Author
 **Dika Hendrayana**
 GitHub: @dikahendrayana
 LinkedIn: **Dika Hendrayana**
