@@ -83,9 +83,9 @@ ecommerce-cloud-etl-pipeline/
 
 ```
 # 🚀 Local Setup & Installation
-
+```
 1. Clone Repository
-```bash
+bash
 git clone https://github.com/dikahendrayana/ecommerce-cloud-etl-pipeline.git
 cd ecommerce-cloud-etl-pipeline
 
@@ -108,10 +108,10 @@ pip install -r requirements.txt
 python main.py
 ```
 
-#📈 Roadmap & Upcoming Enhancements
-[x] Initial cloud pipeline setup with GitHub Actions & Supabase.
+# 📈 Roadmap & Upcoming Enhancements
+[**x**] Initial cloud pipeline setup with GitHub Actions & Supabase.
 
-[x] Automated WhatsApp notification integration upon workflow completion.
+[**x**] Automated WhatsApp notification integration upon workflow completion.
 
 [ ] Dynamic Data Generator Integration: Transition from static REST endpoints to a dynamic synthetic event streaming generator using Faker to simulate daily transactions.
 
@@ -119,11 +119,12 @@ python main.py
 
 [ ] BI Dashboard Integration: Connect Supabase PostgreSQL instance to Metabase / Looker Studio for real-time sales reporting.
 
-#👤 Author
-Dika Hendrayana
+# 👤 Author
+
+**Dika Hendrayana**
 
 GitHub: @dikahendrayana
 
-LinkedIn: Dika Hendrayana
+LinkedIn: **Dika Hendrayana**
 
 Developed as part of a continuous learning path in Data Engineering & Cloud Data Architecture.
